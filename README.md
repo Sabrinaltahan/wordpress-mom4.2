@@ -1,4 +1,4 @@
-Company Theme - WordPress Projekt
+Realestate Theme - WordPress Projekt
 
 
 ## 🚀 Projektbeskrivning
@@ -31,7 +31,7 @@ company-theme/
 
 
 ## Installation
-1. Placera mappen `mycompany-theme` i `wp-content/themes/`
+1. Placera mappen `realestate-theme` i `wp-content/themes/`
 2. Aktivera temat via WordPress-adminpanelen
 3. Skapa sidor (Hem,nyheter,kontakt och Ai-verktyg)
 4. Lägg till några inlägg för att visas i nyhetssektionen
@@ -62,5 +62,5 @@ Eftersom webbplatsen körs lokalt i en utvecklingsmiljö (localhost/MAMP) stöds
 **Sabrin Altahan**  
 
 ## User:
-Username:admin and Password:  ruOI7Lij#5
-Username:editor and Password: Mj6qAoq9D2DvPsu)HZ!e9O36
+Username:root and Password:  root
+Username:sabrin and Password: sabrin

@@ -10,14 +10,24 @@ function realestate_theme_setup() {
 }
 add_action('after_setup_theme', 'realestate_theme_setup');
 
+
 function realestate_enqueue_assets() {
+
+    // ✅ ملف style.css الأساسي (مهم جدًا)
+    wp_enqueue_style(
+        'realestate-style',
+        get_stylesheet_uri()
+    );
+
+    // ✅ ملف styles.css تبعك
     wp_enqueue_style(
         'realestate-main-style',
-        get_template_directory_uri() . '/assets/css/style.css',
-        array(),
+        get_template_directory_uri() . '/assets/css/styles.css',
+        array('realestate-style'), // يعتمد على الأساسي
         '1.0'
     );
 
+    // ✅ JavaScript
     wp_enqueue_script(
         'realestate-main-js',
         get_template_directory_uri() . '/assets/js/main.js',
@@ -27,6 +37,7 @@ function realestate_enqueue_assets() {
     );
 }
 add_action('wp_enqueue_scripts', 'realestate_enqueue_assets');
+
 
 function realestate_widgets_init() {
     register_sidebar(array(
